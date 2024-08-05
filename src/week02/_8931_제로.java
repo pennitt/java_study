@@ -12,7 +12,7 @@ public class _8931_제로 {
 		int T = sc.nextInt();
 
 		for (int t = 1; t <= T; t++) {
-
+			
 			// K번 입력 받음
 			int K = sc.nextInt();
 

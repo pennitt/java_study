@@ -11,10 +11,13 @@ public class _5432_쇠막대기자르기 {
 		int T = sc.nextInt();
 		
 		for (int t = 1; t <= T; t++) {
+			
+			sc.nextLine();
 			String str = sc.nextLine();
 			
 			String[] arr = new String[str.length()];
 			
+			St
 			for (int i = 0; i < str.length(); i++) {
 				char ch = str.charAt(i);
 				
