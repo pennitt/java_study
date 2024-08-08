@@ -13,27 +13,25 @@ public class bj_1592_영식이와친구들 {
 		int m = sc.nextInt();
 		int l = sc.nextInt();
 
-		int[] arr = new int[n + 1];
-		int idx = 1;
+		int[] arr = new int[n];
+		int idx = 0;
 		int cnt = 0;
-		
-		arr[idx] = 1;
-		
-		for (int i = 1; i < 200; i++) {
-			if (arr[idx] == m) {
-				break;
 
-			} else if (arr[idx] % 2 == 0) {
-				idx = idx - l;
+		// 첫 사람에게 횟수 + 1
+		arr[idx] = 1;
+
+		while (true) {
+			if (arr[idx] == m)
+				break;
+			else if (arr[idx] % 2 == 0) {
+				idx = (idx + (n - l)) % n;
 				cnt++;
-				if (idx < 0)
-					idx = idx + n;
-//				System.out.println(idx);
-				
+				arr[idx]++;
+
 			} else if (arr[idx] % 2 != 0) {
-				idx = (idx + l) % (n - 1);
+				idx = (idx + l) % n;
 				cnt++;
-//				System.out.println(idx);
+				arr[idx]++;
 			}
 
 		}
