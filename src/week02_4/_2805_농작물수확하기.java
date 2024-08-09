@@ -2,7 +2,7 @@ package week02_4;
 
 import java.util.*;
 
-public class _2805_농장물수확하기 {
+public class _2805_농작물수확하기 {
 
 	public static void main(String[] args) {
 
